@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+
+  rabbitmq:
+    image: rabbitmq:3.7-management
+    restart: always
+    environment:
+       RABBITMQ_DEFAULT_PASS: rabbitmq
+       RABBITMQ_DEFAULT_USER: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  webapi:
+    image: webapi
+    build:
+      context: .
+      dockerfile: webapi/Dockerfile
+    ports:
+      - 8888:80
+    environment:
+      ASPNETCORE_ENVIRONMENT: Integration
+    depends_on:
+      - rabbitmq
+
+  service:
+    image: service
+    build:
+      context: .
+      dockerfile: service/Dockerfile
+    ports:
+      - 8889:80
+    environment:
+      ASPNETCORE_ENVIRONMENT: Integration
+    depends_on:
+      - rabbitmq

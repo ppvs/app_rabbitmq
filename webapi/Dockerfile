@@ -3,7 +3,7 @@ WORKDIR /source
 
 COPY . .
 
-RUN dotnet publish "./webapi/webapi.csproj" --configuration Release --framework netcoreapp2.2 --no-build --output /app/
+RUN dotnet publish "./webapi/webapi.csproj" --configuration Release --framework netcoreapp2.2 --output /app/
 
 FROM microsoft/dotnet:2.2-aspnetcore-runtime
 
