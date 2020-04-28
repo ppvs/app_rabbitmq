@@ -1,0 +1,8 @@
+C:\Users\ASUS\source\repos\WebApplication1\test\bin\Debug\netstandard2.0\test.deps.json
+C:\Users\ASUS\source\repos\WebApplication1\test\bin\Debug\netstandard2.0\test.dll
+C:\Users\ASUS\source\repos\WebApplication1\test\bin\Debug\netstandard2.0\test.pdb
+C:\Users\ASUS\source\repos\WebApplication1\test\obj\Debug\netstandard2.0\test.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\WebApplication1\test\obj\Debug\netstandard2.0\test.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\WebApplication1\test\obj\Debug\netstandard2.0\test.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\WebApplication1\test\obj\Debug\netstandard2.0\test.dll
+C:\Users\ASUS\source\repos\WebApplication1\test\obj\Debug\netstandard2.0\test.pdb
