@@ -1,0 +1,14 @@
+**/obj/*
+**/bin/*
+*.userprefs
+packages/*
+!.dockerignore
+!/.gitignore
+!/.gitattributes
+!/.editorconfig
+artifacts
+.vs
+*.csproj.user
+*.DotSettings.user
+*.psess
+*.vsp
