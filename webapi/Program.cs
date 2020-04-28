@@ -21,7 +21,7 @@ namespace webapi
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            WebHost.CreateDefaultBuilder()
                 .ConfigureAppConfiguration(builder => {
                     builder.SetBasePath(Path.Combine(Environment.CurrentDirectory, "config"))
                         .AddJsonFile("appsettings.json")
@@ -33,6 +33,7 @@ namespace webapi
                     logging.ClearProviders();
                     logging.AddConsole();
                 })
+                //.UseUrls("http://0.0.0.0:82")
                 .UseStartup<Startup>();
     }
 }

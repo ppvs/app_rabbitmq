@@ -23,7 +23,7 @@ namespace service
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+            WebHost.CreateDefaultBuilder()
                 .ConfigureAppConfiguration(builder => {
                     builder.SetBasePath(Path.Combine(Environment.CurrentDirectory, "config"))
                         .AddJsonFile("appsettings.json")
@@ -35,7 +35,7 @@ namespace service
                     logging.ClearProviders();
                     logging.AddConsole();
                 })
-                .UseUrls("http://0.0.0.0:5005")
+                //.UseUrls("http://0.0.0.0:81")
                 .UseStartup<Startup>();
     }
 }
